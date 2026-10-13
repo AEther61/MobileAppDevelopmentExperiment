@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">Experiment1</string>
+
+    <!-- 首页菜单 -->
+    <string name="home_title">Android 界面布局实验</string>
+    <string name="home_subtitle">实验二 · 共 4 个界面</string>
+    <string name="exp_linear_title">线性布局 LinearLayout</string>
+    <string name="exp_linear_desc">嵌套 LinearLayout + layout_weight 实现 4×4 按钮网格</string>
+    <string name="exp_table_title">表格布局 TableLayout</string>
+    <string name="exp_table_desc">TableLayout + stretchColumns 实现菜单表格</string>
+    <string name="exp_constraint1_title">约束布局 1 · 计算器</string>
+    <string name="exp_constraint1_desc">ConstraintLayout 横向链实现计算器键盘</string>
+    <string name="exp_constraint2_title">约束布局 2 · 太空订票</string>
+    <string name="exp_constraint2_desc">ConstraintLayout 实现太空旅行订票界面</string>
+
+    <!-- 各界面 ActionBar 标题 -->
+    <string name="title_linear_layout">LinearLayout</string>
+    <string name="title_table_layout">Hello TableLayout</string>
+    <string name="title_constraint_calculator">ConstraintLayoutTest</string>
+    <string name="title_space_travel">Space Travel</string>
+
+    <!-- 表格布局内容 -->
+    <string name="tl_open">Open&#8230;</string>
+    <string name="tl_open_shortcut">Ctrl-O</string>
+    <string name="tl_save">Save&#8230;</string>
+    <string name="tl_save_shortcut">Ctrl-S</string>
+    <string name="tl_save_as">Save As&#8230;</string>
+    <string name="tl_save_as_shortcut">Ctrl-Shift-S</string>
+    <string name="tl_import">Import&#8230;</string>
+    <string name="tl_import_shortcut">Ctrl-I</string>
+    <string name="tl_export">Export&#8230;</string>
+    <string name="tl_export_shortcut">Ctrl-E</string>
+    <string name="tl_quit">Quit</string>
+    <string name="tl_marker">X</string>
+
+    <!-- 太空订票界面 -->
+    <string name="tab_space_stations">Space Stations</string>
+    <string name="tab_flights">Flights</string>
+    <string name="tab_rovers">Rovers</string>
+    <string name="space_dca">DCA</string>
+    <string name="space_mars">MARS</string>
+    <string name="space_one_way">One Way</string>
+    <string name="space_traveller">1 Traveller</string>
+    <string name="space_depart">DEPART</string>
+
+    <!-- 计算器界面 -->
+    <string name="calc_input_label">Input</string>
+    <string name="calc_initial_value">0.0</string>
 </resources>

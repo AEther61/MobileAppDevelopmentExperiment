@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  实验二 · 表格布局
+  stretchColumns="1" 让第 2 列吃掉剩余宽度，所以快捷键会贴到右边。
+  第 4、5 行比前面多一列（最左边的 "X"），列索引在整张表里是统一对齐的。
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tl_bg"
+    android:fitsSystemWindows="true"
+    android:padding="8dp"
+    android:stretchColumns="1">
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_open"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="@string/tl_open_shortcut"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_save"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="@string/tl_save_shortcut"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_save_as"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="@string/tl_save_as_shortcut"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/tl_divider" />
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_marker"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_import"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="@string/tl_import_shortcut"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_marker"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_export"
+            android:textColor="@color/tl_text" />
+
+        <TextView
+            android:gravity="end"
+            android:padding="3dp"
+            android:text="@string/tl_export_shortcut"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/tl_divider" />
+
+    <TableRow>
+
+        <TextView
+            android:padding="3dp"
+            android:text="@string/tl_quit"
+            android:textColor="@color/tl_text" />
+    </TableRow>
+</TableLayout>

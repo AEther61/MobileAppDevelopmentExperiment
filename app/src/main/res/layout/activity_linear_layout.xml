@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  实验二 · 线性布局
+  竖向 LinearLayout 里嵌套 4 个横向 LinearLayout，每个按钮用 layout_weight 分配宽度。
+  每一行的权重都不一样，这样才能还原 PPT 里各列宽窄不齐的效果。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ll_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <!-- 第 1 行：权重 21 / 34 / 24 / 21 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="21"
+            android:text="One,One" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="34"
+            android:text="One,Two" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="24"
+            android:text="One,Three" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="21"
+            android:text="One,Four" />
+    </LinearLayout>
+
+    <!-- 第 2 行：权重 21 / 34 / 24 / 21 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="21"
+            android:text="Two,One" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="34"
+            android:text="Two,Two" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="24"
+            android:text="Two,Three" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="21"
+            android:text="Two,Four" />
+    </LinearLayout>
+
+    <!-- 第 3 行：权重 24 / 25 / 27 / 24（这一行最接近等分） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="24"
+            android:text="Three,One" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="25"
+            android:text="Three,Two" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="27"
+            android:text="Three,Three" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="24"
+            android:text="Three,Four" />
+    </LinearLayout>
+
+    <!-- 第 4 行：权重 21 / 32 / 25 / 22 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="21"
+            android:text="Four,One" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="32"
+            android:text="Four,Two" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="25"
+            android:text="Four,Three" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_weight="22"
+            android:text="Four,Four" />
+    </LinearLayout>
+</LinearLayout>

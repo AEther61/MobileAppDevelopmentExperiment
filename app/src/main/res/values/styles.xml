@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 线性布局界面里的网格按钮。必须把 minWidth/minHeight 归零，
+         否则平台 Button 默认的 88dp/48dp 最小尺寸会盖过 layout_weight 的分配结果。 -->
+    <style name="GridButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:background">@drawable/bg_grid_button</item>
+        <item name="android:textColor">@color/ll_text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- 计算器键盘按钮：外观走 style，约束属性（layout_constraint*）仍写在布局里，
+         因为 ConstraintLayout 不保证能从 style 中读取 app: 命名空间的属性。 -->
+    <style name="CalcButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">72dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:background">@drawable/bg_calc_button</item>
+        <item name="android:textColor">@color/calc_button_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- 首页 / 太空订票：无 ActionBar（太空订票的 tab 栏就是界面顶部） -->
     <style name="Theme.Experiment1" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <!-- 线性布局：近黑色 ActionBar，内容区纯黑 -->
+    <style name="Theme.Experiment1.LinearLayout" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/ll_action_bar</item>
+        <item name="android:colorPrimaryDark">@color/black</item>
+        <item name="android:windowBackground">@color/ll_bg</item>
+    </style>
+
+    <!-- 表格布局：灰色 ActionBar -->
+    <style name="Theme.Experiment1.TableLayout" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/tl_action_bar</item>
+        <item name="android:colorPrimaryDark">@color/tl_action_bar_dark</item>
+    </style>
+
+    <!-- 计算器：青绿色 ActionBar -->
+    <style name="Theme.Experiment1.Calculator" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/exp_teal</item>
+        <item name="android:colorPrimaryDark">@color/exp_teal_dark</item>
+    </style>
 </resources>

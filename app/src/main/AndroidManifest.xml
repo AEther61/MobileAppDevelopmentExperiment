@@ -23,6 +23,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 实验二：4 个布局界面。ActionBar 显示的标题就是这里的 android:label。 -->
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:exported="false"
+            android:label="@string/title_linear_layout"
+            android:theme="@style/Theme.Experiment1.LinearLayout" />
+
+        <activity
+            android:name=".TableLayoutActivity"
+            android:exported="false"
+            android:label="@string/title_table_layout"
+            android:theme="@style/Theme.Experiment1.TableLayout" />
+
+        <activity
+            android:name=".ConstraintCalculatorActivity"
+            android:exported="false"
+            android:label="@string/title_constraint_calculator"
+            android:theme="@style/Theme.Experiment1.Calculator" />
+
+        <activity
+            android:name=".SpaceTravelActivity"
+            android:exported="false"
+            android:label="@string/title_space_travel"
+            android:theme="@style/Theme.Experiment1" />
     </application>
 
 </manifest>

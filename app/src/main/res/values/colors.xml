@@ -7,4 +7,33 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- 实验二：从 docs/实验2_Android界面布局.pdf 内嵌截图中提取 -->
+    <!-- 线性布局：黑底 + 深灰按钮 + 浅灰描边 -->
+    <color name="ll_bg">#FF000000</color>
+    <color name="ll_action_bar">#FF212121</color>
+    <color name="ll_button_fill">#FF474747</color>
+    <color name="ll_button_stroke">#FF808080</color>
+    <color name="ll_text">#FFDDDDDD</color>
+
+    <!-- 表格布局：深色内容区 + 浅色文字 + 浅灰分割线 -->
+    <color name="tl_bg">#FF1C1C1C</color>
+    <color name="tl_action_bar">#FF616161</color>
+    <color name="tl_action_bar_dark">#FF424242</color>
+    <color name="tl_text">#FFCCCCCC</color>
+    <color name="tl_divider">#FF909090</color>
+
+    <!-- 约束布局 1：青绿色 ActionBar + 土黄色显示条 -->
+    <color name="exp_teal">#FF00897B</color>
+    <color name="exp_teal_dark">#FF00695C</color>
+    <color name="exp_tan">#FFBDBA99</color>
+    <color name="calc_button_fill">#FFD9D9D9</color>
+    <color name="calc_button_text">#FF222222</color>
+
+    <!-- 约束布局 2：太空订票 -->
+    <color name="exp_green">#FF2B663A</color>
+    <color name="exp_orange">#FFBD6F34</color>
+    <color name="tab_bar_bg">#FFFAFAFA</color>
+    <color name="tab_text">#FF666666</color>
+    <color name="tab_divider">#FFDDDDDD</color>
 </resources>
